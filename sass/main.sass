@@ -1,0 +1,328 @@
+$fontColor: #161616
+$accent: #D03958
+$bright: #E3D5B8
+    
+@font-face
+    font-family: "QuiteChocolatey"
+    src : url("../fonts/QuiteChocolatey.ttf")
+@font-face
+    font-family: "MontserratRegular"
+    src : url("../fonts/MontserratRegular.otf")
+
+*
+    box-sizing: border-box
+    color: $fontColor
+    font-family: MontserratRegular, sans-serif
+    outline: none
+    margin: 0
+    padding: 0
+    // border: 1px solid red
+
+.container
+    width: 1000px
+    margin: 0 auto
+
+a
+    text-decoration: none
+
+.nav-opacity
+    background-color:rgba(255, 255, 255, 0.8)
+
+header
+    background: url('../img/background.png') no-repeat top center / cover
+    background-attachment: fixed
+    width: 100%
+    height: 690px
+    transform-style: inherit
+    section
+        display: flex
+        justify-content: space-between
+        article
+            margin-top: 130px
+            width: 530px
+            padding: 15px
+            h1
+                font-size: 90px
+                text-transform: uppercase
+                text-align: center
+                font-weight: bold
+                span
+                    padding: 0
+                    margin: 0
+                    color: $accent
+            p
+                font-family: sans-serif
+        form
+            margin-top: 130px
+            width: 390px
+            padding: 20px
+            background-color: $accent
+            border-radius: 5px
+            display: block
+            h3
+                color: #fff
+                text-transform: uppercase
+                margin-bottom: 30px
+                text-align: center
+            input
+                padding: 15px
+                height: 60px
+                border: none
+                width: 350px
+                border-radius: 5px
+                margin-bottom: 15px
+                &:last-child
+                    text-transform: uppercase
+                    font-size: 22px
+                    background-color: $fontColor
+                    color: #fff
+                    cursor: pointer
+                    transition: .25s
+                    &:hover
+                        background-color: #fff
+                        color: $fontColor
+            .form-check
+                display: flex
+                align-items: center
+                margin-bottom: 15px
+                p
+                    font-size: 18px
+                    margin: 0 10px
+                    color: #fff
+                input
+                    margin: 5px
+                    width: 18px
+                    height: 18px
+                    border-radius: 5px
+.void
+    height: 60px
+    transform-style: inherit
+
+.nav-opacity
+    background: rgba(255, 255, 255, 0.8)
+
+nav
+    // position: sticky
+    // top: 0
+    transition: .15s
+
+.nav-wrapper 
+    height: 90px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .nav-logo
+        font-family: QuiteChocolatey
+        color: $accent
+        font-size: 80px
+    menu
+        list-style: none
+        display: flex
+        padding: 15px
+        li
+            padding: 3px
+            a
+                text-transform: uppercase
+                padding: 10px
+                font-weight: bold
+                font-size: 18px
+                transition: .25s
+                &:hover
+                    color: #fff
+                    border-radius: 5px
+                    background-color: $accent
+.services
+    padding: 40px 0 40px 0
+    h2
+        display: block
+        font-size: 50px
+        text-transform: uppercase
+        span
+            color: $accent
+    ul
+        list-style: none
+        margin-top: 120px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-align: center
+        li
+            padding: 10px
+            img
+                padding: 5px
+                height: 150px
+                width: auto
+            p
+                padding: 10px
+            
+.about
+    background-color: $accent
+    height: 120px
+    .container
+        padding: 30px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+            width: 600px
+            font-size: 16px
+            color: #fff
+        a
+            border-radius: 5px
+            padding: 20px 60px
+            text-transform: uppercase
+            color: $fontColor
+            background-color: $bright
+            font-weight: bold
+            transition: .25s
+            &:hover
+                background-color: #fff
+                
+.pricing
+    background-color: $bright
+    .container
+        text-align: center
+        h3
+            padding: 70px 0 55px 0
+            text-transform: uppercase
+            font-size: 50px
+            font-weight: bold
+        div
+            display: flex
+            background-color: $bright
+            .price-block
+                border-radius: 5px
+                width: 320px
+                height: 380px
+                display: block
+                background: #fff
+                margin: 0 10px
+                position: relative
+                overflow: hidden
+                .label
+                    position: absolute
+                    left: -62px
+                    top: -12px
+                    background-color: #B4A993
+                    padding: 40px 60px 15px 60px
+                    transform: rotateZ(-45deg)
+                    
+                    p
+                        color: $fontColor
+                        font-size: 16px
+                        font-weight: bold
+                .price-description
+                    border-radius: 5px
+                    display: block
+                    background: #fff
+                    padding: 35px
+                    h5
+                        font-size: 22px
+                    h3
+                        font-size: 60px
+                        color: $accent
+                        text-transform: uppercase
+                        font-weight: bold
+                        padding: 23px
+                    p
+                        font-size: 20px
+                a
+                    font-size: 22px
+                    text-transform: uppercase
+                    padding: 15px 60px
+                    border-radius: 5px
+                    color: $fontColor
+                    background-color: $bright
+                    font-weight: bold
+                    transition: .25s
+                    &:hover
+                        color: $bright
+                        background-color: $accent
+
+.materials
+    background-color: #fff
+    .container
+        display: flex
+        justify-content: space-between
+        padding: 120px 0
+        .reviews
+            .reviews-title
+                display: block
+                text-align: center
+                h3
+                    font-size: 50px
+                    color: $fontColor
+                    font-weight: bold
+                    padding: 20px 0
+                    text-transform: uppercase
+            .reviews-block
+                display: block
+                .review
+                    width: 490px
+                    display: flex
+                    align-items: center
+                    position: relative
+                    p
+                        border-radius: 5px
+                        width: 440px
+                        display: block
+                        padding: 30px
+                        font-size: 18px
+                        color: $fontColor
+                        transition: .25s
+                        span
+                            margin-top: 10px
+                            color: $accent
+                            font-weight: bold
+                        &:hover
+                            background-color: $bright
+                    img
+                        width: 100px
+                        height: 100px
+                        position: absolute
+                        right: 0
+        .gallery
+            display: block
+            width: 380px
+            .gallery-title
+                display: block
+                text-align: center
+                h3
+                    font-size: 50px
+                    color: $accent
+                    font-weight: bold
+                    padding: 20px 0
+                    text-transform: uppercase
+            .gallery-items
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                width: 380px
+                height: 240px
+                img
+                    width: 100px
+                    height: 100px
+            .more
+                text-align: center
+                a
+                    color: $accent
+                    text-transform: uppercase
+                    text-decoration: underline
+footer
+    background-color: $fontColor
+    .container
+        padding: 60px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .footer-text
+            color: #fff
+            font-size: 20px
+            span
+                color: $accent
+        .footer-logo
+            font-size: 65px
+            font-family: QuiteChocolatey, sans-serif
+            color: $accent
+
